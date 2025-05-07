@@ -2,7 +2,7 @@ package xdb
 
 import "fmt"
 
-func createSearcher(dbPath string, cachePolicy string) (*Searcher, error) {
+func CreateSearcher(dbPath string, cachePolicy string) (*Searcher, error) {
 	switch cachePolicy {
 	case "nil", "file":
 		return NewWithFileOnly(dbPath)

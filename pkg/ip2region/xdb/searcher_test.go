@@ -6,7 +6,7 @@ import (
 
 func TestIndexPolicy_String(t *testing.T) {
 
-	searcher, err := createSearcher("../../../db/ip2region.xdb", "vectorIndex")
+	searcher, err := CreateSearcher("../../../db/ip2region.xdb", "vectorIndex")
 
 	if err != nil {
 		t.Fatalf("failed to create searcher: %s", err)
