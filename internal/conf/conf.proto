@@ -26,8 +26,7 @@ message Server {
 }
 
 message Data {
-
-
+    IpDBInfo ipdb = 1;
 }
 
 
